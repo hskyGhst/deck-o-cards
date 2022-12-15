@@ -1,0 +1,16 @@
+@import "/src/tokens/colors.css";
+@import "/src/tokens/size.css";
+@import "/src/tokens/fonts.css";
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+}
+
+.inverted {
+    transform: rotate(180deg);
+}

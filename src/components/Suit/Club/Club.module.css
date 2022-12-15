@@ -1,0 +1,62 @@
+@import "/src/tokens/colors.css";
+@import "/src/tokens/size.css";
+
+.wrapper {
+    width: 48px;
+    height: 48px;
+    margin: 9px;
+    position: relative;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.square,
+.circle1,
+.circle2,
+.circle3 {
+    background-color: #444444;
+    position: absolute;
+    transition: all 350ms;
+}
+
+.square {
+    width: 24px;
+    height: 24px;
+    top: 8px;
+    left: 8px;
+}
+
+.circle1,
+.circle2,
+.circle3 {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px 12px;
+    transition-duration: 297.5ms;
+}
+
+.circle1 {
+    top: 8px;
+    left: 20px;
+}
+
+.circle2 {
+    top: 20px;
+    left: 8px;
+}
+
+.circle3 {
+    top: 4px;
+    left: 4px;
+}
+
+.tail {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 35px;
+    left: 35px;
+    border-top: 10px solid #444444;
+    border-right: 10px solid transparent;
+    transition: all 350ms;
+}

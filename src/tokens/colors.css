@@ -1,0 +1,109 @@
+:where(html){
+    --purple-0: #f8f0fc;
+    --purple-1: #f3d9fa;
+    --purple-2: #eebefa;
+    --purple-3: #e599f7;
+    --purple-4: #da77f2;
+    --purple-5: #cc5de8;
+    --purple-6: #be4bdb;
+    --purple-7: #ae3ec9;
+    --purple-8: #9c36b5;
+    --purple-9: #862e9c;
+    --purple-10: #702682;
+    --purple-11: #5a1e69;
+    --purple-12: #44174f;
+
+    --yellow-0: #fff9db;
+    --yellow-1: #fff3bf;
+    --yellow-2: #ffec99;
+    --yellow-3: #ffe066;
+    --yellow-4: #ffd43b;
+    --yellow-5: #fcc419;
+    --yellow-6: #fab005;
+    --yellow-7: #f59f00;
+    --yellow-8: #f08c00;
+    --yellow-9: #e67700;
+    --yellow-10: #b35c00;
+    --yellow-11: #804200;
+    --yellow-12: #663500;
+
+    --orange-0: #fff4e6;
+    --orange-1: #ffe8cc;
+    --orange-2: #ffd8a8;
+    --orange-3: #ffc078;
+    --orange-4: #ffa94d;
+    --orange-5: #ff922b;
+    --orange-6: #fd7e14;
+    --orange-7: #f76707;
+    --orange-8: #e8590c;
+    --orange-9: #d9480f;
+    --orange-10: #bf400d;
+    --orange-11: #99330b;
+    --orange-12: #802b09;
+
+    --gray-0: #f8f9fa;
+    --gray-1: #f1f3f5;
+    --gray-2: #e9ecef;
+    --gray-3: #dee2e6;
+    --gray-4: #ced4da;
+    --gray-5: #adb5bd;
+    --gray-6: #868e96;
+    --gray-7: #495057;
+    --gray-8: #343a40;
+    --gray-9: #212529;
+    --gray-10: #16191d;
+    --gray-11: #0d0f12;
+    --gray-12: #030507
+}
+
+/* Light */
+html {
+    --brand-light: var(--orange-6);
+
+    --text1-light: var(--gray-8);
+    --text2-light: var(--gray-7);
+
+    --surface1-light: var(--gray-2);
+    --surface2-light: var(--gray-0);
+    --surface3-light: var(--gray-1);
+    --surface4-light: var(--gray-3);
+}
+
+/* Dark */
+html {
+    --brand-dark: var(--orange-3);
+
+    --text1-dark: var(--gray-1);
+    --text2-dark: var(--gray-3);
+
+    --surface1-dark: var(--gray-9);
+    --surface2-dark: var(--gray-8);
+    --surface3-dark: var(--gray-7);
+    --surface4-dark: var(--gray-6);
+}
+
+:root {
+    --brand: var(--brand-light);
+
+    --text1: var(--text1-light);
+    --text2: var(--text2-light);
+
+    --surface1: var(--surface1-light);
+    --surface2: var(--surface2-light);
+    --surface3: var(--surface3-light);
+    --surface4: var(--surface4-light);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --brand: var(--brand-dark);
+
+        --text1: var(--text1-dark);
+        --text2: var(--text2-dark);
+
+        --surface1: var(--surface1-dark);
+        --surface2: var(--surface2-dark);
+        --surface3: var(--surface3-dark);
+        --surface4: var(--surface4-dark);
+    }
+}

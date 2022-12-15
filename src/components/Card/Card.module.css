@@ -1,0 +1,42 @@
+@import "/src/tokens/colors.css";
+@import "/src/tokens/size.css";
+
+.wrapper {
+    position: relative;
+    background: var(--surface1);
+    padding: var(--size-7);
+    width: var(--size-15);
+    aspect-ratio: 2.5 / 3.5;
+    border-radius: var(--size-3);
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: stretch;
+}
+
+.corner {
+    width: 100px;
+}
+
+.cornerTop {
+    align-self: flex-start;
+}
+
+.cornerBottom {
+    align-self: flex-end;
+}
+
+.suit > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    transform-origin: center center;
+    transform: scale(6);
+}

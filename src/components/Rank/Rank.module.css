@@ -1,0 +1,17 @@
+@import "/src/tokens/colors.css";
+@import "/src/tokens/size.css";
+@import "/src/tokens/fonts.css";
+
+.wrapper {
+    font-family: var(--font-mono);
+    font-size: var(--font-size-5);
+    font-weight: var(--font-weight-4);
+}
+
+.red {
+    color: #c41010;
+}
+
+.black {
+    color: #444444;
+}

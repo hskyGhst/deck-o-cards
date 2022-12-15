@@ -1,0 +1,45 @@
+@import "/src/tokens/colors.css";
+@import "/src/tokens/size.css";
+
+.wrapper {
+    width: 48px;
+    height: 48px;
+    margin: 9px;
+    position: relative;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.square,
+.circle1,
+.circle2 {
+    background-color: #c41010;
+    position: absolute;
+    transition: all 350ms;
+}
+
+.square {
+    width: 24px;
+    height: 24px;
+    top: 14px;
+    left: 14px;
+    transition-duration: 350ms;
+}
+
+.circle1,
+.circle2 {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px 12px;
+    transition-duration: 297.5ms;
+}
+
+.circle1 {
+    top: 2px;
+    left: 14px;
+}
+
+.circle2 {
+    top: 14px;
+    left: 2px;
+}
